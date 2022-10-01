@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-image: url(https://wallpapercave.com/wp/wp8227005.png);
+			background-position: center;
+			background-size: cover;
+			font-family: sans-serif;
+			margin-top: 40px;
+			cursor: url(peler.cur), default;
+		}
+		.regform{
+			width: 800px;
+			background-color: rgb(0,0,0,0.6);
+			margin:auto;
+			color: #FFFFFF;
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+			border-radius: 15px 15px 0px 0px
+		}
+.main{
+	background-color: rgb(0,0,0,0.5);
+	width: 800px;
+	margin: auto;
+	}
+	form{
+		padding: 10px;
+	}
+	#name{
+		width: 100px;
+		height: 100px;
+	}
+	.name{
+		margin-left: 25px;
+		margin-top: 30px;
+		width: 125px;
+		color: white;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.firstname{
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding:0 22px;
+		font-size: 16px;
+	}
+	.lastname{
+		position: relative;
+		left: 465px;
+		top: -99px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+	.firstlabel{
+		position: relative;
+		color: #E5E5E5;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 206px;
+		top: -30px;
+	}
+	.lastlabel{
+		position: relative;
+		color: #E5E5E5;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 470px;
+		top: -93px;
+	}
+	.adress{
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		width: 532px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+	.gender{
+		position: relative;
+		display: inline-block;
+		padding-right: 70px;
+		font-size: 25px;
+		left: 200px;
+		top: -30px;
+		color: white;
+	}
+	.gender input{
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		cursor: pointer;
+		outline: none;
+	}
+	.email{
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		width: 532px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+	.phone{
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		width: 532px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+	.country{
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		width: 532px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+	.photo{
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		width: 532px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+	.comment{
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		width: 532px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+	button{
+		background-color: #3BAF9F;
+		display: block;
+		margin: 20px 0px 0px 20px;
+		text-align: center;
+		border-radius: 12px;
+		border:2px solid #3666473;
+		padding:14px 110px;
+		outline: none;
+		color: white;
+		cursor: pointer;
+		transition: 0.25px;
+	}
+	</style>
+</head>
+<body>
+	<div class="regform"><h1>Form Data Diri</h1></div>
+	<div class="main">
+		<form>
+			<div id="name">
+				<h2 class="name">Nama</h2>
+				<input class="firstname" type="text" name="first_name" required placeholder="Enter your firstname"><br>
+				<label class="firstlabel">first name</label>
+				<input class="lastname" type="text" name="last_name" required placeholder="Enter your lastname">
+				<label class="lastlabel">last name</label>
+		</div>
+		<h2 class="name">Alamat</h2>
+		<input class="adress" type="text" name="adress" required placeholder="Masukkan Alamat">
+		<h2 class="name">Jenis Kelamin</h2>
+		<label class="gender">
+			<input class="gender-one" type="radio" name="gender" required>
+			<span class="checkmark"></span>
+			Pria
+		</label>
+		<label class="gender">
+			<input class="gender-two" type="radio" name="gender" required>
+			<span class="checkmark"></span>
+			Wanita
+		</label>
+		<h2 class="name">E-mail</h2>
+		<input class="email" type="text" name="email" required placeholder="Masukkan E-mail">
+		<h2 class="name">No.HP</h2>
+		<input class="phone" type="text" name="phone" required placeholder="Masukkan No.HP">
+		<h2 class="name">Kota</h2>
+		<input class="country" list="country" name="country" required placeholder="Pilih Kota">
+		<datalist id=country>
+			<option value="Jakarta Barat"><option value="Jakarta Timur"><option value="Jakarta Pusat"><option value="Jakarta Selatan"><option value="Jakarta Utara"></option>
+		</datalist>
+		<h2 class="name">Foto</h2>
+		<input class="photo" type="text" name="photo" placeholder="Masukkan Foto">
+		<input class="photo" type="file" name="photo" required>
+		<h2 class="name">Komentar</h2>
+		<textarea class="comment" required></textarea>
+		<button type="submit">Submit</button>
+		</form>
+	</div>
+
+
+</body>
+</html>
